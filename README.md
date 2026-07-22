@@ -28,7 +28,7 @@ mount -o remount,ro /
 
 **第二**：蓝牙和wifi有冲突，参考 [issue88](https://github.com/zampierilucas/kindle-hid-passthrough/issues/88)
 
-在手动关wifi或者开wifi之前都必须先关闭蓝牙，打开BTManager关闭蓝牙。放久了锁屏断开wifi自动开启就没这个问题。
+在手动关wifi之前必须先关闭蓝牙，打开BTManager关闭蓝牙，一旦没先关闭蓝牙再手动关了wifi，就无法再打开wifi了，只能重启kindle。放久了锁屏断开wifi解锁自动连wifi则没这个问题。
 
 ### 1.打开BTManager连接蓝牙设备
 
@@ -81,7 +81,7 @@ Event: time 1784689208.159086, type 3 (Absolute), code 58 (Pressure on contact a
 lua /mnt/us/page-turn/tap.lua 10 1000
 ```
 
-将点击左边点击右边点击左下角三个命令写成三个脚本left.sh、right.sh和bottom-left.sh，然后编辑 /mnt/us/kindle-button-mapper/config.ini，把按键id和脚本对上就行了。最后在kindle上打开Button Mapper，在Bindings一栏先点击Reload加载配置，再点击Save&Apply保存并重启服务，完毕。
+将点击左边、点击右边和点击左下角三个命令写成三个脚本left.sh、right.sh和bottom-left.sh，然后编辑 /mnt/us/kindle-button-mapper/config.ini，把按键id和脚本对上就行了。最后在kindle上打开Button Mapper，在Bindings一栏先点击Reload加载配置，再点击Save&Apply保存并重启服务，完毕。
 
 ```
 
