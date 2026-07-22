@@ -111,7 +111,7 @@ uniq = D2:01:38:30:05:D3
 
 ## 标注转换成markdown文件并部署为网页
 
-在kindle上做的标注或书签会被记录到My Clippings.txt问价。
+在kindle上做的标注或书签会被记录到My Clippings.txt文件。
 
 markdown文件夹的kindle.py程序用于将My Clippings.txt转换成markdown文件，放到Hexo网站的效果如[此网站](https://zgshen.github.io/kindle/)
 
@@ -122,6 +122,7 @@ My Clippings.txt和kindle.py放到Hexo项目的source文件夹下，Hexo的Githu
 - name: Hexo deploy
 run: |
     hexo clean
+    cd source/
     python3 kindle.py
     cd ..
     hexo g
