@@ -11,7 +11,7 @@
 - 安装蓝牙插件 [kindle-hid-passthrough](https://github.com/zampierilucas/kindle-hid-passthrough) 和设备事件映射插件 [kindle-button-mapper-rs](https://github.com/zampierilucas/kindle-button-mapper-rs)
 
 
-本人设备是kpw5，如果你也是kpw5，在使用kindle-hid-passthrough之前需要先注意下面两个问题，目前还没解决，其他设备自行验证：
+本人设备是kpw5（系统版本5.16.7），如果你也是kpw5，在使用kindle-hid-passthrough之前需要先注意下面两个问题，目前还没解决，其他设备自行验证：
 
 **第一**：kindle-hid-passthrough 的开机执行脚本会导致kwp5无限重启，所以要去掉。参考[issue87](https://github.com/zampierilucas/kindle-hid-passthrough/issues/87)，如果不幸无限重启了，长按电源键40秒强制重启慢慢等。
 
