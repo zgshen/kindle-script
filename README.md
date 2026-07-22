@@ -75,7 +75,11 @@ Event: time 1784689208.159086, type 3 (Absolute), code 54 (MT Y), value 83
 Event: time 1784689208.159086, type 3 (Absolute), code 58 (Pressure on contact area), value 109
 ```
 
-不过实在没必要，按照估算一下就行，可以做下测试，打开一本书，在终端执行tap-script目录里的lua脚本，后面带上xy坐标 10 1000，观察屏幕反应：
+不过实在没必要，按照屏幕分辨率估算一下就行。
+
+可以使用tap-script目录里的tap.lua脚本做下测试，tap.lua 是用来模拟触摸屏幕的脚本。
+
+打开一本书，在终端执行tap.lua脚本，在后面带上xy坐标 10 1000，观察屏幕反应：
 
 ```
 lua /mnt/us/page-turn/tap.lua 10 1000
